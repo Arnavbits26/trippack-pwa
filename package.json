@@ -1,0 +1,33 @@
+{
+  "name": "trippack-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TripPack: an offline-first trip itinerary planner built as an installable PWA (React, TypeScript, Redux Toolkit, hand-written service worker).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "lighthouse": "node scripts/lighthouse.mjs"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.2.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vitest": "^2.0.5"
+  }
+}
